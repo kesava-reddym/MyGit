@@ -25,6 +25,7 @@ public class SmokeTest {
       driver.findElement(By.id("pass")).sendKeys(pwd);
     }
 
+  
     @Then("^User should be able to login Successfully$")
     public void user_should_be_able_to_login_Successfully() throws Throwable {
     	driver.findElement(By.id("u_0_r")).click();
