@@ -11,13 +11,11 @@
 #Background: List of steps run before each of the scenarios
 #""" (Doc Strings)
 #| (Data Tables)
-#@ (Tags/Labels):To group Scenarios 
+#@ (Tags/Labels):To group Scenarios
 #<> (placeholder)
 #""
 ## (Comments)
-
 #Sample Feature Definition Template
-
 @Login1
 Feature: Test Facebook smoke scenario
 
@@ -30,5 +28,4 @@ Feature: Test Facebook smoke scenario
     Examples: 
       | uname      | pwd      |
       | 8754647423 | sachinrt |
-      | 8754647423 | aaaaaaaa |
-      | 8754647423 | bbbbbbbb |
+      | 8754647423 | absch    |
