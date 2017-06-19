@@ -20,9 +20,9 @@ public class SmokeTest {
     }
 
     @When("^I enter valid \"([^\"]*)\" and \"([^\"]*)\"$")
-    public void i_enter_valid_username_and_password(String uname, String pwd) throws Throwable {
-      driver.findElement(By.id("email")).sendKeys(uname);
-      driver.findElement(By.id("pass")).sendKeys(pwd);
+    public void i_enter_valid_username_and_password(String username, String password) throws Throwable {
+      driver.findElement(By.id("email")).sendKeys(username);
+      driver.findElement(By.id("pass")).sendKeys(password);
     }
 
   
