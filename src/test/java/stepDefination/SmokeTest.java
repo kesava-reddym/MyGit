@@ -19,10 +19,10 @@ public class SmokeTest {
        driver.navigate().to("http://www.facebook.com");
     }
 
-    @When("^I enter valid username and password$")
-    public void i_enter_valid_username_and_password() throws Throwable {
-      driver.findElement(By.id("email")).sendKeys("8754647423");
-      driver.findElement(By.id("pass")).sendKeys("sachinrt");
+    @When("^I enter valid \"([^\"]*)\" and \"([^\"]*)\"$")
+    public void i_enter_valid_username_and_password(String uname, String pwd) throws Throwable {
+      driver.findElement(By.id("email")).sendKeys(uname);
+      driver.findElement(By.id("pass")).sendKeys(pwd);
     }
 
     @Then("^User should be able to login Successfully$")
